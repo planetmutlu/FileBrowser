@@ -14,6 +14,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        guard let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last else {
+            fatalError("Could not find user documents path")
+        }
+        
+        print(documentsPath)
     }
 
     override func didReceiveMemoryWarning() {

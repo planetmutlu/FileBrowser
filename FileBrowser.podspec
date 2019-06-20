@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FileBrowser"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "Powerful iOS file browser in Swift."
 
 # This description is used to generate tags and improve search results.
@@ -32,8 +32,8 @@ Pod::Spec.new do |s|
 
   s.source_files = "FileBrowser"
   s.resources = "FileBrowser/Resources/*.*"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
-
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
+  s.swift_version = '5.0'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'QuickLook', 'WebKit'
   # s.dependency 'AFNetworking', '~> 2.3'
